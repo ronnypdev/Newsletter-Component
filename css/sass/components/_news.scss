@@ -1,0 +1,95 @@
+//==========================
+// ==> Component styles  <===
+//==========================
+
+  .newsletter-comp {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+
+
+    .news-form {
+      width: 100%;
+
+      legend {
+        @include font-styles($main-font, em(20), 700, $blue, uppercase);
+        width: 100%;
+        text-align: center;
+        border-top: 4px solid $blue;
+        border-bottom: 1px solid $blue;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      p {
+        @include font-styles($main-font, em(16), 400, $gray, none);
+        line-height: 16px;
+      }
+
+      input[type="email"] {
+        display: block;
+        width: 100%;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid $light-gray;
+        border-radius: 8px;
+        &::-webkit-input-placeholder {
+           @include font-styles($main-font, em(17), 400, $space-gray , none);
+           padding-left: 15px;
+        }
+      }
+
+      input.cbox2 {
+        margin-top: 10px;
+      }
+
+      label[for="cbox1"],
+      label[for="cbox2"] {
+        margin-left: 10px;
+      }
+
+      .btn-bg {
+        width: 100%;
+        background-color: $blue;
+        padding-top: 10px;
+        border-radius: 8px;
+        padding-bottom: 10px;
+
+        button[type="submit"] {
+          cursor: pointer;
+          display: block;
+          width: 90%;
+          padding-top: 10px;
+          padding-bottom: 12px;
+          border: 1px solid transparent;
+          border-bottom: none;
+          border-radius: 4px;
+          margin: 0 auto;
+          @include font-styles($main-font, em(18), 400, $white, none);
+          text-shadow: 1px 2px 2px rgba(0,0,0,0.8);
+          background: -webkit-linear-gradient($light-blue, $blue);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        button::after {
+          content: "\2605";;
+          color: $white;
+          position: relative;
+          left: 12px;
+          bottom: 1px;
+          font-size: em(18);
+        }
+
+        button::before {
+          content: "\2605";;
+          color: $white;
+          position: relative;
+          right: 12px;
+          bottom: 1px;
+          font-size: em(18);
+        }
+      }
+    }
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <meta name="description" content="A description of this page">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!--
+
+      Instructions:
+
+      In the HTML pane, add the necessary markup to recreate the newsletter component depicted in the image located at the top-right corner of the page. Style appropriately in the CSS pane.
+
+      This component should be fluid, meaning it will adjust to fit the width of its parent container.
+
+      This exercise should take between 30-45 minutes.
+
+    -->
+
+    <!-- Newsletter Component -->
+        <article class="newsletter-comp">
+          <form action="/signup" class="news-form">
+            <legend>Free email newsletter</legend>
+            <p>Let About.com send you the latest from our Neurology Expert</p>
+            <input type="checkbox" class="cbox1" id="cbox1" value="c_box1" /><label for="cbox1">Treament Options</label><br />
+            <input type="checkbox" class="cbox2" id="cbox2" value="c_box2"/><label for="cbox2">Specialty Information</label>
+            <input type="email" id="email" placeholder="Your email address"/>
+            <div class="btn-bg">
+              <button type="submit">SIGN UP</button>
+            </div>
+          </form>
+        </article>
+    <!-- End Newsletter Component -->
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+//==========================
+// ==> Mixins  <===
+//==========================
+@mixin font-styles($fam, $size, $weight, $color, $transform) {
+
+  font-family: $fam;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-transform: $transform;
+
+}
+
+@mixin opt-font {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
